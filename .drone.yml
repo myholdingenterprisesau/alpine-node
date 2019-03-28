@@ -1,0 +1,9 @@
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: myholdingenterprises/alpine-node
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
