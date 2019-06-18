@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-RUN apk add --no-cache make gcc g++ python git rsync openssh \
+RUN apk add --no-cache make gcc g++ python git rsync openssh autoreconf \
     && rm -rf /var/lib/apt/lists/* \
     /var/cache/apk/* \
     /usr/share/man \
